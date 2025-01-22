@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 /* shared styles */
 .display-flex {
@@ -18,6 +19,23 @@
 .banner {
   max-width: 1160px;
   margin: 0 auto;
+}
+main section {
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+/* marquee style */
+marquee {
+  color: #ff5733;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 /* nav bar style */
 .navbar {
@@ -100,26 +118,264 @@
 .banner-img img {
   width: 100%;
 }
+/* standard curriculum style */
+#curriculum {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.curriculum-content {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.curriculum-card-container {
+  justify-content: space-between;
+}
+.curriculum-card {
+  text-align: center;
+  width: 360px;
+  height: 480px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+}
+#kinder-card {
+  background-image: linear-gradient(
+    #def5ff 0%,
+    #e8f8ff 13%,
+    #ffffff 40%,
+    #ffffff 99%
+  );
+  border: 0.94px solid rgba(222, 245, 255, 1);
+}
+#elementary-card {
+  background-image: linear-gradient(#fff4dc 0%, #ffffff 40%, #ffffff 100%);
+  border: 0.94px solid rgba(255, 244, 220, 1);
+}
+#middle-card {
+  background-image: linear-gradient(#eee1ff 0%, #ffffff 40%, #ffffff 100%);
+  border: 0.94px solid #f2e8ff;
+}
+.curriculum-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #202020;
+  margin-top: 30px;
+}
+.curriculum-card-description {
+  color: #808080;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 30px 0;
+  max-width: 285px;
+}
+.kinder-btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #64c8ff;
+  background-color: white;
+  border: none;
+}
+.elementary-btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f0aa00;
+  background-color: white;
+  border: none;
+}
+.middle-btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #8700ff;
+  background-color: white;
+  border: none;
+}
+.curriculum-arrow-container {
+  justify-content: center;
+  margin-top: 80px;
+}
+.curriculum-arrow-container div {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: Orange;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.curriculum-arrow-container div i {
+  color: white;
+  font-size: 1.5rem;
+}
+/* our story style */
+#story {
+  background: url("../assets/bg.png"),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+#stories-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.story-card-container {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+#story-first {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.story-card {
+  border-radius: 16px;
+  background-color: white;
+}
+.story-card img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+.story-card-content {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+.story-content {
+  text-align: center;
+}
+.story-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#story-other-title {
+  font-size: 0.94rem;
+}
+
+.story-card-description {
+  font-weight: 500;
+  color: #666666;
+  margin-top: 10px;
+}
+
+.story-time-btn-container {
+  position: relative;
+  left: 20px;
+  top: -20px;
+}
+.story-time-btn {
+  border: none;
+  border-radius: 48px;
+  padding: 10px 19px;
+  color: white;
+  font-weight: 500;
+  background-color: #95b226;
+}
+.story-btn-container {
+  text-align: center;
+}
+/* footer style */
+.footer {
+  background-color: #01acfd;
+  padding: 123px 0 174px 0;
+}
+.footer-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.kids-education-title-logo {
+  align-items: center;
+  gap: 10px;
+}
+.kids-education-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+.kids-education-description {
+  max-width: 400px;
+  color: white;
+  font-size: 1.25rem;
+  margin-top: 30px;
+}
+.about-school-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.about-school-list > li {
+  list-style: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 20px;
+}
+.keep-in-touch-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+.keep-in-touch-list {
+  gap: 10px;
+  margin-top: 30px;
+}
+.keep-in-touch-list > li {
+  list-style: none;
+}
 /* responsive styles */
 @media screen and (max-width: 576px) {
-  header {
-    border-bottom: 0.5px solid #fea301;
-  }
   .navbar {
     padding-left: 16px;
     padding-right: 16px;
+    border-bottom: 0.5px solid #fea301;
+  }
+  .logo-name {
+    display: none;
   }
   .nav-links,
   .nav-btn {
     display: none;
   }
   .icon {
-    display: inline;
+    display: flex;
   }
   .banner {
     flex-direction: column-reverse;
     text-align: center;
     gap: 20px;
     padding: 0 16px;
+  }
+  /* curriculum */
+  .curriculum-card-container {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .curriculum-arrow-container {
+    display: none;
+  }
+  /* story */
+  .story-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  #story-first {
+    display: none;
+  }
+  .story-time-btn-container {
+    left: 9px;
+    top: -20px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
   }
 }
